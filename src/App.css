@@ -1,17 +1,17 @@
-.container{
+.container {
   max-width: 800px;
-  margin : 0 auto;
-  padding : 20px;
+  margin: 0 auto;
+  padding: 20px;
   background-color: #282c34;
-  color : white;
+  color: white;
 }
 
-.test{
-  background : blueviolet;
-  color : white;
+.test {
+  background: yellowgreen;
+  color: white;
   font-size: 48px;
   font-weight: bold;
-  padding : 20px;
+  padding: 20px;
 }
 
 .App {
