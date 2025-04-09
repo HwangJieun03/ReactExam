@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
+import TodoModal from "./TodoModal";
 
 type Todo = {
   id: number;
@@ -47,9 +48,9 @@ const TodoList: React.FC = () => {
     setSelectedTodo(todo);
   };
 
-  const handleCloseDetail = ()=>{
+  const handleCloseDetail = () => {
     setShowDetail(false);
-  }
+  };
 
   return (
     <div>
@@ -97,6 +98,11 @@ const TodoList: React.FC = () => {
           </ul>
         </div>
       </div>
+      <TodoModal
+        show={showDetail}
+        todo={selectedTodo}
+        handleClose={handleCloseDetail}
+      ></TodoModal>
     </div>
   );
 };
